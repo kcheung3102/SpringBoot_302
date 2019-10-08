@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Job Form</h1>
-<form action=""# th:action="@{process}" th:object="${job}" method="post">
+<form action="#" th:action="@{process}" th:object="${job}" method="post">
     Title: <input type="text" th:field="*{title}" />
     <span th:if="${#fields.hasErrors('title')}"
           th:errors="*{title}"></span><br />
